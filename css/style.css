@@ -1,0 +1,80 @@
+@media print{
+          .bgImages{
+            display:none;
+          }
+        }
+  .cc {
+  font-size: small;
+  color: #850303;
+  margin: auto;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #fcfcfc;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    display: block;
+    /* 1 pixel black shadow to left, top, right and bottom
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover,a.current {
+    text-decoration: none;
+    color:#b54704;
+    text-shadow: 2px 2px 5px #343a40;
+  }
+  nav {
+    background-color: #6c757d;
+  }
+
+  h1{
+    padding-top: 30px;
+    color:#b54704;
+  }
+  .space {
+    padding-top: 100px;
+  }
+
+  h2{
+    color:#b54704;
+  }
+
+  .content a {
+    color: #f1f1f1;
+  }
+
+  .top-buffer { margin-top:20px; }
+
+  .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 92%; /* Full width */
+    padding: 5px; /* Some padding */
+    text-align: center;
+    /* transition: .5s ease;
+    opacity:0; */
+  }
+  /* .col-md-4:hover .content{
+   opacity: 1;
+  } */

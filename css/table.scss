@@ -1,0 +1,83 @@
+/* table style */
+$thcolor :white;
+$thbgcolor :gray;
+$myfont :arial, sans-serif;
+
+%tableDesign {
+  font-family: $myfont;
+  border-collapse: collapse;
+  width: 100%;
+  max-width:auto;
+  table-layout:fixed;
+  margin:auto;
+}
+
+%tbodyDesign {
+  height:390px;
+  overflow:auto;
+  overflow-x:hidden;
+  display:block;
+}
+
+%tbodyRow {
+  display:table;
+  table-layout:fixed;
+  width: 100%;
+}
+
+%theadDesign{
+  display:table;
+  width:100%;
+  font-size: 18px;
+  /* width:calc(100% - 15px); */
+}
+
+%column {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+%th {
+  background-color: $thbgcolor;
+  color:$thcolor;
+}
+
+table {
+    @extend %tableDesign;
+
+    th{
+      @extend %th;
+      @extend %column;
+    }
+
+    td{
+      @extend %column;
+    }
+
+    tr:nth-child(odd) {
+    background-color: #dddddd;
+    }
+}
+
+tbody {
+  @extend %tbodyDesign;
+
+  tr {
+    @extend %tbodyRow;
+  }
+}
+
+thead{
+  @extend %theadDesign;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
